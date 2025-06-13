@@ -99,7 +99,7 @@ header - start */
     color: #4d5ae5;
 }
 
-.logo-header {
+.header-conteiner .logo {
     margin-right: 76px;
 }
 
@@ -110,7 +110,8 @@ header - start */
 .main-menu,
 .main-menu-list {
     display: flex;
-    align-items: center;
+}
+.main-menu-list {
     gap: 40px;
 }
 
@@ -254,7 +255,7 @@ header - start */
 
 .our-team-list-item {
     max-width: 264px;
-    flex-basis: calc((1158px-3*24)/4);
+    flex-basis: calc((100%-3*24)/4);
     text-align: center;
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -266,7 +267,7 @@ header - start */
 
 .portfolio-list-item {
     max-width: 360px;
-    flex-basis: calc((1158px-2*24)/3);
+    flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-list-text {
