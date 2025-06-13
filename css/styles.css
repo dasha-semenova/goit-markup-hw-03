@@ -61,13 +61,13 @@ section {
 .portfolio .container {
     flex-direction: column;
     align-items: center;
-    row-gap: 72px;
 }
 
 .features-list,
 .our-team-list,
 .portfolio-list {
     display: flex;
+    gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
     align-items: start;
@@ -78,10 +78,10 @@ section {
     display: block;
     width: 100%;
     height: auto;
+    padding-top: 32px 16px;
 }
 
-.our-team-list-text,
-.portfolio-list-text {
+.our-team-list-text {
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -97,7 +97,6 @@ header - start */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
 }
 
 .logo-header {
@@ -115,10 +114,6 @@ header - start */
     gap: 40px;
 }
 
-.main-menu-list {
-    padding: 24px 0;
-}
-
 .header-conteiner {
     justify-content: space-between;
     align-items: center;
@@ -130,6 +125,7 @@ header - start */
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding: 24px 0;
 }
 
 .main-menu .link:hover,
@@ -209,7 +205,7 @@ header - start */
 
 .features-list-item {
     max-width: 264px;
-    flex-basis: calc((1158px-3*24)/4);
+    flex-basis: calc((100%-3*24)/4);
 }
 
 .visually-hidden {
@@ -231,6 +227,7 @@ header - start */
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .subtitle-three {
@@ -255,11 +252,6 @@ header - start */
     background-color: #F4F4FD;
 }
 
-.our-team-list {
-    display: flex;
-    gap: 24px;
-}
-
 .our-team-list-item {
     max-width: 264px;
     flex-basis: calc((1158px-3*24)/4);
@@ -278,9 +270,8 @@ header - start */
 }
 
 .portfolio-list-text {
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: #E7E9FC;
+    border: 1px solid #e7e9fc;
+    border-top: none;
     padding-left: 16px;
 }
 
@@ -293,13 +284,17 @@ footer - start */
     padding-bottom: 100px;
 }
 
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .logo-studio-white {
     color: #f4f4fd;
 }
 
 .footer .container {
     flex-direction: column;
-    row-gap: 16px;
 }
 .text-light {
     font-size: 16px;
