@@ -93,6 +93,7 @@ header - start */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
 }
 
 .header-inner {
@@ -113,6 +114,7 @@ header - start */
 .main-menu {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .main-menu-list {
@@ -293,7 +295,6 @@ footer - start */
 }
 
 .footer .logo {
-    display: inline-block;
     margin-bottom: 16px;
 }
 
