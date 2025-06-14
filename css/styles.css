@@ -107,7 +107,11 @@ header - start */
     color: #2E2F42;
 }
 
-.main-menu,
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
 .main-menu-list {
     display: flex;
 }
