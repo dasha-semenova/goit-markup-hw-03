@@ -34,10 +34,6 @@ a {
     text-decoration: none;
 }
 
-header {
-    border-bottom: 1px solid #E7E9FC;
-}
-
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -58,7 +54,10 @@ section {
 
 .features .container,
 .our-team .container,
-.portfolio .container {
+.portfolio .container,
+.hero .container,
+.footer .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -68,17 +67,14 @@ section {
 .portfolio-list {
     display: flex;
     gap: 24px;
-    row-gap: 48px;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: start;
-    justify-content: space-between;
 }
 
 .list-image {
     display: block;
     width: 100%;
-    height: auto;
-    padding-top: 32px 16px;
 }
 
 .our-team-list-text {
@@ -99,6 +95,13 @@ header - start */
     color: #4d5ae5;
 }
 
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .header-conteiner .logo {
     margin-right: 76px;
 }
@@ -109,19 +112,16 @@ header - start */
 
 .main-menu {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .main-menu-list {
     display: flex;
-}
-.main-menu-list {
     gap: 40px;
 }
 
 .header-conteiner {
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .main-menu .link {
@@ -170,8 +170,6 @@ header - start */
 
 .hero .container {
     margin: 0 auto;
-    flex-direction: column;   
-    align-items: center; 
 }
 
 .hero-title {
@@ -210,19 +208,20 @@ header - start */
 
 .features-list-item {
     max-width: 264px;
-    flex-basis: calc((100%-3*24)/4);
+    flex-basis: calc((100% - 3 * 24) / 4);
 }
 
 .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
     border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .subtitle-two {
@@ -259,7 +258,7 @@ header - start */
 
 .our-team-list-item {
     max-width: 264px;
-    flex-basis: calc((100%-3*24)/4);
+    flex-basis: calc((100% - 3 * 24) / 4);
     text-align: center;
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -269,6 +268,10 @@ header - start */
 /* ---------------------------------------
 Секция 4 - Портфолио - start */
 
+.portfolio-list {
+    row-gap: 48px;
+    justify-content: space-between;
+}
 .portfolio-list-item {
     max-width: 360px;
     flex-basis: calc((100% - 2 * 24px) / 3);
@@ -299,7 +302,7 @@ footer - start */
 }
 
 .footer .container {
-    flex-direction: column;
+    align-items: flex-start;
 }
 .text-light {
     font-size: 16px;
