@@ -55,8 +55,7 @@ section {
 .features .container,
 .our-team .container,
 .portfolio .container,
-.hero .container,
-.footer .container {
+.hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,9 +301,6 @@ footer - start */
     color: #f4f4fd;
 }
 
-.footer .container {
-    align-items: flex-start;
-}
 .text-light {
     font-size: 16px;
     line-height: 1.5;
